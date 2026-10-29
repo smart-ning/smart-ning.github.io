@@ -1,0 +1,6 @@
+(function(){'use strict';var answers=window.ANSWER_BOOK_LIBRARY||[],button=document.getElementById('askLab'),card=document.getElementById('labAnswer'),tag=document.getElementById('labTag'),text=document.getElementById('labAnswerText'),bagKey='wi-answer-book-bag-v1',lastKey='wi-answer-book-last-v1';if(!button||!card||!answers.length)return;
+function freshBag(){var a=[],i,j,t;for(i=0;i<answers.length;i++)a.push(i);for(i=a.length-1;i>0;i--){j=Math.floor(Math.random()*(i+1));t=a[i];a[i]=a[j];a[j]=t}var last=Number(localStorage.getItem(lastKey));if(a.length>1&&a[a.length-1]===last){t=a[0];a[0]=a[a.length-1];a[a.length-1]=t}return a}
+function getBag(){try{var a=JSON.parse(localStorage.getItem(bagKey)||'[]');if(Array.isArray(a)&&a.length)return a}catch(e){}return freshBag()}
+function openBook(){var bag=getBag(),index=bag.pop();try{localStorage.setItem(bagKey,JSON.stringify(bag));localStorage.setItem(lastKey,String(index))}catch(e){}card.className='lab-answer';void card.offsetWidth;tag.textContent='答案之书';text.textContent=answers[index];card.className='lab-answer reveal';button.textContent='再翻一次';var left=document.getElementById('answerBookLeft');if(left)left.textContent='本轮还剩 '+bag.length+' 条未出现'}
+button.addEventListener('click',openBook,false);
+})();
