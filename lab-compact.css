@@ -1,3 +1,4 @@
-.lab-card{grid-column:auto;display:block;min-height:310px}.lab-lead{margin-bottom:10px}.lab-question textarea{min-height:46px}.lab-ask{margin:8px 0;padding:9px 12px}.lab-answer{min-height:92px;padding:11px 13px}.lab-answer strong{font-size:15px;line-height:1.42}.lab-answer p{margin-top:5px}.lab-privacy{margin-top:6px}
+.lab-card{grid-column:auto;display:block;min-height:0;padding:15px}.lab-card .card-title{font-size:14px}.lab-lead{margin:5px 0 7px;font-size:11px}.lab-question span{margin-bottom:4px;font-size:10px}.lab-question textarea{min-height:36px;height:36px;padding:8px 10px;font-size:12px}.lab-ask{margin:6px 0;padding:7px 10px;font-size:12px}.lab-answer{min-height:72px;padding:8px 10px;border-radius:14px}.lab-answer span{margin-bottom:4px;padding:3px 7px;font-size:9px}.lab-answer strong{font-size:13px;line-height:1.35}.lab-answer p{margin-top:3px;font-size:10px;line-height:1.3}.lab-privacy{margin-top:4px;font-size:9px}
 @media(min-width:701px){.lab-card{display:block}.lab-card .card-title,.lab-card .lab-lead,.lab-card .lab-question,.lab-card .lab-ask,.lab-card .lab-answer,.lab-card .lab-privacy{grid-column:auto;grid-row:auto}}
-@media(max-width:620px){.lab-card{min-height:280px}}
+@media(max-width:620px){.lab-card{min-height:0}}
+.lab-disclaimer,.lab-privacy{margin:3px 0 0;color:#ad9aa8;font-size:9px;text-align:center}.lab-privacy{margin-top:1px}
