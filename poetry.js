@@ -1,0 +1,10 @@
+(function(){'use strict';
+var $=function(id){return document.getElementById(id)},corpus=window.POETRY_CORPUS||[];
+var moodMap={'开心':'happy','平静':'calm','疲惫':'tired','发呆':'daze'};
+function currentTime(){var h=new Date().getHours();return h>=5&&h<11?'morning':h>=11&&h<17?'day':h>=17&&h<20?'evening':'night'}
+function currentWeather(){try{var w=JSON.parse(localStorage.getItem('wi-weather')||'null');if(!w)return'any';var c=Number(w.weather_code),wind=Number(w.wind_speed_10m||0);if(wind>=25)return'wind';if((c>=51&&c<=67)||(c>=80&&c<=82)||c>=95)return'rain';if((c>=71&&c<=77)||(c>=85&&c<=86))return'snow';if(c===2||c===3||c===45||c===48)return'cloud';if(c===0||c===1)return'clear'}catch(e){}return'any'}
+function score(p,t,w,m){var s=Math.random()*1.5,c=p.categories||{};if((c.time||[]).indexOf(t)>-1)s+=3;if((c.weather||[]).indexOf(w)>-1)s+=3;if((c.mood||[]).indexOf(m)>-1)s+=4;if((c.time||[]).indexOf('any')>-1)s+=.5;if((c.weather||[]).indexOf('any')>-1)s+=.5;return s}
+function recommend(showToast){if(!corpus.length)return;var t=currentTime(),w=currentWeather(),m=moodMap[localStorage.getItem('wi-mood')]||'calm',last=localStorage.getItem('wi-last-poem')||'';var ranked=corpus.map(function(p){return{p:p,s:score(p,t,w,m)}}).filter(function(x){return x.p.dynasty+'|'+x.p.author+'|'+x.p.title!==last}).sort(function(a,b){return b.s-a.s});var pool=ranked.slice(0,Math.min(12,ranked.length)),chosen=pool[Math.floor(Math.random()*pool.length)].p,key=chosen.dynasty+'|'+chosen.author+'|'+chosen.title;$('peopleQuote').textContent='“'+chosen.quote+'”';$('peopleSource').textContent=chosen.dynasty+' · '+chosen.author+' · 《'+chosen.title+'》';localStorage.setItem('wi-last-poem',key);if(showToast&&typeof window.showIslandToast==='function')window.showIslandToast('已按此刻的天气与心情换了一句')}
+var button=$('newPeople');if(button)button.onclick=function(){recommend(true)};document.querySelectorAll('.mood-girl').forEach(function(el){el.addEventListener('click',function(){setTimeout(function(){recommend(false)},0)})});document.addEventListener('weather-updated',function(){recommend(false)});recommend(false);
+})();
+
