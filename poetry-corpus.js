@@ -3,7 +3,7 @@ window.POETRY_CORPUS=[
     "dynasty": "唐",
     "author": "白居易",
     "title": "琵琶引",
-    "quote": "春江花朝秋月夜，往往取酒還獨傾。",
+    "quote": "春江花朝秋月夜，往往取酒还独倾。",
     "categories": {
       "time": [
         "morning",
@@ -24,7 +24,7 @@ window.POETRY_CORPUS=[
     "dynasty": "唐",
     "author": "杜牧",
     "title": "泊秦淮",
-    "quote": "煙籠寒水月籠沙，夜泊秦淮近酒家。",
+    "quote": "烟笼寒水月笼沙，夜泊秦淮近酒家。",
     "categories": {
       "time": [
         "day",
@@ -42,8 +42,8 @@ window.POETRY_CORPUS=[
   {
     "dynasty": "唐",
     "author": "杜甫",
-    "title": "詠懷古跡五首 二",
-    "quote": "江山故宅空文藻，雲雨荒臺豈夢思。",
+    "title": "咏怀古迹五首 二",
+    "quote": "江山故宅空文藻，云雨荒台岂梦思。",
     "categories": {
       "time": [
         "any"
@@ -60,8 +60,8 @@ window.POETRY_CORPUS=[
   {
     "dynasty": "唐",
     "author": "李白",
-    "title": "靜夜思",
-    "quote": "舉頭望山月，低頭思故鄉。",
+    "title": "静夜思",
+    "quote": "举头望山月，低头思故乡。",
     "categories": {
       "time": [
         "day",
@@ -80,8 +80,8 @@ window.POETRY_CORPUS=[
   {
     "dynasty": "唐",
     "author": "李白",
-    "title": "下終南山過斛斯山人宿置酒",
-    "quote": "暮從碧山下，山月隨人歸。",
+    "title": "下终南山过斛斯山人宿置酒",
+    "quote": "暮从碧山下，山月随人归。",
     "categories": {
       "time": [
         "evening",
@@ -99,8 +99,8 @@ window.POETRY_CORPUS=[
   {
     "dynasty": "唐",
     "author": "白居易",
-    "title": "長恨歌",
-    "quote": "蜀江水碧蜀山青，聖主朝朝暮暮情。",
+    "title": "长恨歌",
+    "quote": "蜀江水碧蜀山青，圣主朝朝暮暮情。",
     "categories": {
       "time": [
         "morning",
@@ -119,8 +119,8 @@ window.POETRY_CORPUS=[
   {
     "dynasty": "唐",
     "author": "杜甫",
-    "title": "天末憶李白",
-    "quote": "鴻雁幾時到，江湖秋水多。",
+    "title": "天末忆李白",
+    "quote": "鸿雁几时到，江湖秋水多。",
     "categories": {
       "time": [
         "any"
@@ -137,8 +137,8 @@ window.POETRY_CORPUS=[
   {
     "dynasty": "唐",
     "author": "李白",
-    "title": "宣州謝朓樓餞別校書叔雲",
-    "quote": "抽刀斷水水更流，舉杯銷愁愁更愁。",
+    "title": "宣州谢朓楼饯别校书叔云",
+    "quote": "抽刀断水水更流，举杯销愁愁更愁。",
     "categories": {
       "time": [
         "day",
@@ -157,8 +157,8 @@ window.POETRY_CORPUS=[
   {
     "dynasty": "唐",
     "author": "李白",
-    "title": "鼓吹曲辭 將進酒",
-    "quote": "君不見黃河之水天上來，奔流到海不復回。",
+    "title": "鼓吹曲辞 将进酒",
+    "quote": "君不见黄河之水天上来，奔流到海不复回。",
     "categories": {
       "time": [
         "evening"
@@ -175,8 +175,8 @@ window.POETRY_CORPUS=[
   {
     "dynasty": "唐",
     "author": "李白",
-    "title": "橫吹曲辭 關山月",
-    "quote": "明月出天山，蒼茫雲海間。",
+    "title": "横吹曲辞 关山月",
+    "quote": "明月出天山，苍茫云海间。",
     "categories": {
       "time": [
         "day",
@@ -195,8 +195,8 @@ window.POETRY_CORPUS=[
   {
     "dynasty": "唐",
     "author": "杜牧",
-    "title": "金谷園",
-    "quote": "日暮東風怨啼鳥，落花猶似墮樓人。",
+    "title": "金谷园",
+    "quote": "日暮东风怨啼鸟，落花犹似堕楼人。",
     "categories": {
       "time": [
         "day",
@@ -214,8 +214,8 @@ window.POETRY_CORPUS=[
   {
     "dynasty": "唐",
     "author": "孟浩然",
-    "title": "望洞庭湖贈張丞相",
-    "quote": "八月湖水平，涵虛混太清。",
+    "title": "望洞庭湖赠张丞相",
+    "quote": "八月湖水平，涵虚混太清。",
     "categories": {
       "time": [
         "day",
@@ -233,8 +233,8 @@ window.POETRY_CORPUS=[
   {
     "dynasty": "唐",
     "author": "孟浩然",
-    "title": "過故人莊",
-    "quote": "待到重陽日，還來就菊花。",
+    "title": "过故人庄",
+    "quote": "待到重阳日，还来就菊花。",
     "categories": {
       "time": [
         "day"
@@ -251,8 +251,8 @@ window.POETRY_CORPUS=[
   {
     "dynasty": "唐",
     "author": "孟浩然",
-    "title": "歲除夜有懷",
-    "quote": "亂山殘雪夜，孤燈異鄉人。",
+    "title": "岁除夜有怀",
+    "quote": "乱山残雪夜，孤灯异乡人。",
     "categories": {
       "time": [
         "night"
@@ -271,7 +271,7 @@ window.POETRY_CORPUS=[
     "dynasty": "唐",
     "author": "孟浩然",
     "title": "宿建德江",
-    "quote": "移舟泊煙渚，日暮客愁新。",
+    "quote": "移舟泊烟渚，日暮客愁新。",
     "categories": {
       "time": [
         "day",
@@ -291,8 +291,8 @@ window.POETRY_CORPUS=[
   {
     "dynasty": "唐",
     "author": "柳宗元",
-    "title": "漁翁",
-    "quote": "煙銷日出不見人，[欸]乃一聲山水綠。",
+    "title": "渔翁",
+    "quote": "烟销日出不见人，[欸]乃一声山水绿。",
     "categories": {
       "time": [
         "day"
@@ -310,7 +310,7 @@ window.POETRY_CORPUS=[
     "dynasty": "唐",
     "author": "杜甫",
     "title": "春望",
-    "quote": "國破山河在，城春草木深。",
+    "quote": "国破山河在，城春草木深。",
     "categories": {
       "time": [
         "day"
@@ -328,8 +328,8 @@ window.POETRY_CORPUS=[
   {
     "dynasty": "唐",
     "author": "杜甫",
-    "title": "詠懷古跡五首 一",
-    "quote": "三峽樓臺淹日月，五溪衣服共雲山。",
+    "title": "咏怀古迹五首 一",
+    "quote": "三峡楼台淹日月，五溪衣服共云山。",
     "categories": {
       "time": [
         "day",
@@ -347,8 +347,8 @@ window.POETRY_CORPUS=[
   {
     "dynasty": "唐",
     "author": "杜甫",
-    "title": "詠懷古跡五首 三",
-    "quote": "畫圖省識春風面，環佩空歸月夜魂。",
+    "title": "咏怀古迹五首 三",
+    "quote": "画图省识春风面，环佩空归月夜魂。",
     "categories": {
       "time": [
         "night"
@@ -366,8 +366,8 @@ window.POETRY_CORPUS=[
   {
     "dynasty": "唐",
     "author": "孟浩然",
-    "title": "宿桐廬江寄廣陵舊遊",
-    "quote": "山暝聞猿愁，滄江急夜流。",
+    "title": "宿桐庐江寄广陵旧游",
+    "quote": "山暝闻猿愁，沧江急夜流。",
     "categories": {
       "time": [
         "night"
@@ -386,7 +386,7 @@ window.POETRY_CORPUS=[
     "dynasty": "唐",
     "author": "杜牧",
     "title": "旅宿",
-    "quote": "寒燈思舊事，斷鴈警愁眠。",
+    "quote": "寒灯思旧事，断鴈警愁眠。",
     "categories": {
       "time": [
         "any"
@@ -404,7 +404,7 @@ window.POETRY_CORPUS=[
     "dynasty": "唐",
     "author": "柳宗元",
     "title": "江雪",
-    "quote": "孤舟蓑笠翁，獨釣寒江雪。",
+    "quote": "孤舟蓑笠翁，独钓寒江雪。",
     "categories": {
       "time": [
         "any"
@@ -420,8 +420,8 @@ window.POETRY_CORPUS=[
   {
     "dynasty": "唐",
     "author": "杜牧",
-    "title": "將赴吳興登樂遊原一絕",
-    "quote": "欲把一麾江海去，樂遊原上望昭陵。",
+    "title": "将赴吴兴登乐游原一绝",
+    "quote": "欲把一麾江海去，乐游原上望昭陵。",
     "categories": {
       "time": [
         "any"
@@ -438,7 +438,7 @@ window.POETRY_CORPUS=[
     "dynasty": "唐",
     "author": "杜牧",
     "title": "秋夕",
-    "quote": "天階夜色涼如水，坐看牽牛織女星。",
+    "quote": "天阶夜色凉如水，坐看牵牛织女星。",
     "categories": {
       "time": [
         "evening",
@@ -455,8 +455,8 @@ window.POETRY_CORPUS=[
   {
     "dynasty": "唐",
     "author": "白居易",
-    "title": "自河南經亂關內阻饑兄弟離散各在一處因望月有感聊書所懷寄上浮梁大兄於潛七兄烏江十五兄兼示符離及下邽弟妹",
-    "quote": "共看明月應垂淚，一夜鄉心五處同。",
+    "title": "自河南经乱关内阻饥兄弟离散各在一处因望月有感聊书所怀寄上浮梁大兄于潜七兄乌江十五兄兼示符离及下邽弟妹",
+    "quote": "共看明月应垂泪，一夜乡心五处同。",
     "categories": {
       "time": [
         "night"
@@ -473,8 +473,8 @@ window.POETRY_CORPUS=[
   {
     "dynasty": "唐",
     "author": "柳宗元",
-    "title": "登柳州城樓寄漳汀封連四州",
-    "quote": "城上高樓接大荒，海天愁思正茫茫。",
+    "title": "登柳州城楼寄漳汀封连四州",
+    "quote": "城上高楼接大荒，海天愁思正茫茫。",
     "categories": {
       "time": [
         "any"
@@ -491,8 +491,8 @@ window.POETRY_CORPUS=[
   {
     "dynasty": "唐",
     "author": "白居易",
-    "title": "賦得古原草送別",
-    "quote": "野火燒不盡，春風吹又生。",
+    "title": "赋得古原草送别",
+    "quote": "野火烧不尽，春风吹又生。",
     "categories": {
       "time": [
         "any"
@@ -509,9 +509,9 @@ window.POETRY_CORPUS=[
   },
   {
     "dynasty": "唐",
-    "author": "杜審言",
-    "title": "和晉陵陸丞早春遊望",
-    "quote": "雲霞出海曙，梅柳渡江春。",
+    "author": "杜审言",
+    "title": "和晋陵陆丞早春游望",
+    "quote": "云霞出海曙，梅柳渡江春。",
     "categories": {
       "time": [
         "morning"
@@ -527,9 +527,9 @@ window.POETRY_CORPUS=[
   },
   {
     "dynasty": "唐",
-    "author": "韋應物",
-    "title": "和晉陵陸丞早春遊望",
-    "quote": "雲霞出海曙，梅柳渡江春。",
+    "author": "韦应物",
+    "title": "和晋陵陆丞早春游望",
+    "quote": "云霞出海曙，梅柳渡江春。",
     "categories": {
       "time": [
         "morning"
@@ -546,8 +546,8 @@ window.POETRY_CORPUS=[
   {
     "dynasty": "唐",
     "author": "柳宗元",
-    "title": "晨詣超師院讀禪經",
-    "quote": "日出霧露餘，青松如膏沐。",
+    "title": "晨诣超师院读禅经",
+    "quote": "日出雾露余，青松如膏沐。",
     "categories": {
       "time": [
         "morning",
@@ -565,9 +565,9 @@ window.POETRY_CORPUS=[
   },
   {
     "dynasty": "唐",
-    "author": "王灣",
+    "author": "王湾",
     "title": "次北固山下",
-    "quote": "海日生殘夜，江春入舊年。",
+    "quote": "海日生残夜，江春入旧年。",
     "categories": {
       "time": [
         "day",
@@ -586,8 +586,8 @@ window.POETRY_CORPUS=[
   {
     "dynasty": "唐",
     "author": "白居易",
-    "title": "後宮詞",
-    "quote": "淚濕羅巾夢不成，夜深前殿按歌聲。",
+    "title": "后宫词",
+    "quote": "泪湿罗巾梦不成，夜深前殿按歌声。",
     "categories": {
       "time": [
         "night"
@@ -604,7 +604,7 @@ window.POETRY_CORPUS=[
     "dynasty": "唐",
     "author": "柳宗元",
     "title": "溪居",
-    "quote": "閑依農圃鄰，偶似山林客。",
+    "quote": "闲依农圃邻，偶似山林客。",
     "categories": {
       "time": [
         "any"
@@ -621,9 +621,9 @@ window.POETRY_CORPUS=[
   },
   {
     "dynasty": "唐",
-    "author": "劉長卿",
-    "title": "秋日登吳公臺上寺遠眺寺即陳將吳明徹戰場",
-    "quote": "古臺搖落後，秋日望鄉心。",
+    "author": "刘长卿",
+    "title": "秋日登吴公台上寺远眺寺即陈将吴明彻战场",
+    "quote": "古台摇落后，秋日望乡心。",
     "categories": {
       "time": [
         "day"
@@ -638,9 +638,9 @@ window.POETRY_CORPUS=[
   },
   {
     "dynasty": "唐",
-    "author": "劉長卿",
-    "title": "餞別王十一南遊",
-    "quote": "長江一帆遠，落日五湖春。",
+    "author": "刘长卿",
+    "title": "饯别王十一南游",
+    "quote": "长江一帆远，落日五湖春。",
     "categories": {
       "time": [
         "day"
@@ -656,9 +656,9 @@ window.POETRY_CORPUS=[
   },
   {
     "dynasty": "唐",
-    "author": "崔顥",
-    "title": "黃鶴樓",
-    "quote": "日暮鄉關何處是，煙波江上使人愁。",
+    "author": "崔颢",
+    "title": "黄鹤楼",
+    "quote": "日暮乡关何处是，烟波江上使人愁。",
     "categories": {
       "time": [
         "day",
@@ -675,9 +675,9 @@ window.POETRY_CORPUS=[
   },
   {
     "dynasty": "唐",
-    "author": "王昌齡",
-    "title": "芙蓉樓送辛漸二首 一",
-    "quote": "寒雨連天夜入湖，平明送客楚山孤。",
+    "author": "王昌龄",
+    "title": "芙蓉楼送辛渐二首 一",
+    "quote": "寒雨连天夜入湖，平明送客楚山孤。",
     "categories": {
       "time": [
         "night"
@@ -694,9 +694,9 @@ window.POETRY_CORPUS=[
   },
   {
     "dynasty": "唐",
-    "author": "崔塗",
-    "title": "巴山道中除夜書懷",
-    "quote": "亂山殘雪夜，孤燭異鄉春。",
+    "author": "崔涂",
+    "title": "巴山道中除夜书怀",
+    "quote": "乱山残雪夜，孤烛异乡春。",
     "categories": {
       "time": [
         "day",
@@ -715,8 +715,8 @@ window.POETRY_CORPUS=[
   {
     "dynasty": "唐",
     "author": "朱斌",
-    "title": "登樓",
-    "quote": "白日依山盡，黃河入海流。",
+    "title": "登楼",
+    "quote": "白日依山尽，黄河入海流。",
     "categories": {
       "time": [
         "day",
@@ -732,9 +732,9 @@ window.POETRY_CORPUS=[
   },
   {
     "dynasty": "唐",
-    "author": "王之渙",
-    "title": "登鸛雀樓",
-    "quote": "白日依山盡，黃河入海流。",
+    "author": "王之涣",
+    "title": "登鹳雀楼",
+    "quote": "白日依山尽，黄河入海流。",
     "categories": {
       "time": [
         "day",
@@ -750,8 +750,8 @@ window.POETRY_CORPUS=[
   },
   {
     "dynasty": "唐",
-    "author": "韓翃",
-    "title": "酬程延秋夜即事見贈",
+    "author": "韩翃",
+    "title": "酬程延秋夜即事见赠",
     "quote": "星河秋一雁，砧杵夜千家。",
     "categories": {
       "time": [
@@ -767,9 +767,9 @@ window.POETRY_CORPUS=[
   },
   {
     "dynasty": "唐",
-    "author": "韋莊",
-    "title": "臺城",
-    "quote": "江雨霏霏江草齊，六朝如夢鳥空啼。",
+    "author": "韦庄",
+    "title": "台城",
+    "quote": "江雨霏霏江草齐，六朝如梦鸟空啼。",
     "categories": {
       "time": [
         "morning"
@@ -784,9 +784,9 @@ window.POETRY_CORPUS=[
   },
   {
     "dynasty": "唐",
-    "author": "王維",
+    "author": "王维",
     "title": "送梓州李使君",
-    "quote": "山中一夜雨，樹杪百重泉。",
+    "quote": "山中一夜雨，树杪百重泉。",
     "categories": {
       "time": [
         "day",
@@ -803,9 +803,9 @@ window.POETRY_CORPUS=[
   },
   {
     "dynasty": "唐",
-    "author": "許渾",
-    "title": "秋日赴闕題潼關驛樓",
-    "quote": "樹色隨山迥，河聲入海遙。",
+    "author": "许浑",
+    "title": "秋日赴阙题潼关驿楼",
+    "quote": "树色随山迥，河声入海遥。",
     "categories": {
       "time": [
         "day"
@@ -821,9 +821,9 @@ window.POETRY_CORPUS=[
   },
   {
     "dynasty": "唐",
-    "author": "劉長卿",
+    "author": "刘长卿",
     "title": "新年作",
-    "quote": "嶺猨同旦暮，江柳共風煙。",
+    "quote": "岭猨同旦暮，江柳共风烟。",
     "categories": {
       "time": [
         "morning",
@@ -840,9 +840,9 @@ window.POETRY_CORPUS=[
   },
   {
     "dynasty": "唐",
-    "author": "劉長卿",
-    "title": "江州重別薛六柳八二員外",
-    "quote": "江上月明胡鴈過，淮南木落楚山多。",
+    "author": "刘长卿",
+    "title": "江州重别薛六柳八二员外",
+    "quote": "江上月明胡鴈过，淮南木落楚山多。",
     "categories": {
       "time": [
         "night"
@@ -859,8 +859,8 @@ window.POETRY_CORPUS=[
   {
     "dynasty": "唐",
     "author": "王翰",
-    "title": "涼州詞二首 一",
-    "quote": "葡萄美酒夜光杯，欲飲琵琶馬上催。",
+    "title": "凉州词二首 一",
+    "quote": "葡萄美酒夜光杯，欲饮琵琶马上催。",
     "categories": {
       "time": [
         "night"
@@ -875,9 +875,9 @@ window.POETRY_CORPUS=[
   },
   {
     "dynasty": "唐",
-    "author": "盧綸",
+    "author": "卢纶",
     "title": "晚次鄂州",
-    "quote": "三湘衰鬢逢秋色，萬里歸心對月明。",
+    "quote": "三湘衰鬓逢秋色，万里归心对月明。",
     "categories": {
       "time": [
         "evening",
@@ -894,9 +894,9 @@ window.POETRY_CORPUS=[
   },
   {
     "dynasty": "唐",
-    "author": "王維",
+    "author": "王维",
     "title": "山居秋暝",
-    "quote": "空山新雨後，天氣晚來秋。",
+    "quote": "空山新雨后，天气晚来秋。",
     "categories": {
       "time": [
         "evening"
@@ -911,9 +911,9 @@ window.POETRY_CORPUS=[
   },
   {
     "dynasty": "唐",
-    "author": "王維",
-    "title": "歸嵩山作",
-    "quote": "荒城臨古渡，落日滿秋山。",
+    "author": "王维",
+    "title": "归嵩山作",
+    "quote": "荒城临古渡，落日满秋山。",
     "categories": {
       "time": [
         "day"
@@ -929,9 +929,9 @@ window.POETRY_CORPUS=[
   },
   {
     "dynasty": "唐",
-    "author": "王維",
-    "title": "送別",
-    "quote": "山中相送罷，日暮掩柴扉。",
+    "author": "王维",
+    "title": "送别",
+    "quote": "山中相送罢，日暮掩柴扉。",
     "categories": {
       "time": [
         "day",
@@ -948,9 +948,9 @@ window.POETRY_CORPUS=[
   },
   {
     "dynasty": "唐",
-    "author": "王維",
-    "title": "雜詩三首 二",
-    "quote": "來日綺窗前，寒梅着花未。",
+    "author": "王维",
+    "title": "杂诗三首 二",
+    "quote": "来日绮窗前，寒梅着花未。",
     "categories": {
       "time": [
         "day"
@@ -965,9 +965,9 @@ window.POETRY_CORPUS=[
   },
   {
     "dynasty": "唐",
-    "author": "李頎",
-    "title": "送陳章甫",
-    "quote": "青山朝別暮還見，嘶馬出門思舊鄉。",
+    "author": "李颀",
+    "title": "送陈章甫",
+    "quote": "青山朝别暮还见，嘶马出门思旧乡。",
     "categories": {
       "time": [
         "morning",
@@ -986,8 +986,8 @@ window.POETRY_CORPUS=[
   {
     "dynasty": "唐",
     "author": "常建",
-    "title": "宿王昌齡隱居",
-    "quote": "松際露微月，清光猶爲君。",
+    "title": "宿王昌龄隐居",
+    "quote": "松际露微月，清光犹为君。",
     "categories": {
       "time": [
         "night"
@@ -1004,9 +1004,9 @@ window.POETRY_CORPUS=[
   },
   {
     "dynasty": "唐",
-    "author": "宋之問",
+    "author": "宋之问",
     "title": "新年作",
-    "quote": "嶺猨同旦暮，江柳共風煙。",
+    "quote": "岭猨同旦暮，江柳共风烟。",
     "categories": {
       "time": [
         "morning",
@@ -1023,9 +1023,9 @@ window.POETRY_CORPUS=[
   },
   {
     "dynasty": "唐",
-    "author": "劉禹錫",
-    "title": "西塞山懷古",
-    "quote": "今逢四海爲家日，故壘蕭蕭蘆荻秋。",
+    "author": "刘禹锡",
+    "title": "西塞山怀古",
+    "quote": "今逢四海为家日，故垒萧萧芦荻秋。",
     "categories": {
       "time": [
         "day"
@@ -1041,9 +1041,9 @@ window.POETRY_CORPUS=[
   },
   {
     "dynasty": "唐",
-    "author": "張繼",
-    "title": "楓橋夜泊",
-    "quote": "月落烏啼霜滿天，江楓漁父對愁眠。",
+    "author": "张继",
+    "title": "枫桥夜泊",
+    "quote": "月落乌啼霜满天，江枫渔父对愁眠。",
     "categories": {
       "time": [
         "night"
@@ -1060,9 +1060,9 @@ window.POETRY_CORPUS=[
   },
   {
     "dynasty": "唐",
-    "author": "韋應物",
-    "title": "賦得暮雨送李胄",
-    "quote": "楚江微雨裏，建業暮鐘時。",
+    "author": "韦应物",
+    "title": "赋得暮雨送李胄",
+    "quote": "楚江微雨里，建业暮钟时。",
     "categories": {
       "time": [
         "evening"
@@ -1077,9 +1077,9 @@ window.POETRY_CORPUS=[
   },
   {
     "dynasty": "唐",
-    "author": "岑參",
-    "title": "白雪歌送武判官歸京",
-    "quote": "忽然一夜春風來，千樹萬樹梨花開。",
+    "author": "岑参",
+    "title": "白雪歌送武判官归京",
+    "quote": "忽然一夜春风来，千树万树梨花开。",
     "categories": {
       "time": [
         "day",
@@ -1098,9 +1098,9 @@ window.POETRY_CORPUS=[
   },
   {
     "dynasty": "唐",
-    "author": "王之渙",
-    "title": "涼州詞二首 一",
-    "quote": "羌笛何須怨楊柳，春光不度玉門關。",
+    "author": "王之涣",
+    "title": "凉州词二首 一",
+    "quote": "羌笛何须怨杨柳，春光不度玉门关。",
     "categories": {
       "time": [
         "evening"
@@ -1417,7 +1417,7 @@ window.POETRY_CORPUS=[
     "dynasty": "宋",
     "author": "晏殊",
     "title": "木兰花・玉楼春",
-    "quote": "长於春梦几多时，散似秋云无觅处。",
+    "quote": "长于春梦几多时，散似秋云无觅处。",
     "categories": {
       "time": [
         "any"
@@ -1826,7 +1826,7 @@ window.POETRY_CORPUS=[
     "dynasty": "宋",
     "author": "欧阳修",
     "title": "玉楼春",
-    "quote": "燕鸿过後春归去。",
+    "quote": "燕鸿过后春归去。",
     "categories": {
       "time": [
         "any"
