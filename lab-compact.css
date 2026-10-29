@@ -1,0 +1,3 @@
+.lab-card{grid-column:auto;display:block;min-height:310px}.lab-lead{margin-bottom:10px}.lab-question textarea{min-height:46px}.lab-ask{margin:8px 0;padding:9px 12px}.lab-answer{min-height:92px;padding:11px 13px}.lab-answer strong{font-size:15px;line-height:1.42}.lab-answer p{margin-top:5px}.lab-privacy{margin-top:6px}
+@media(min-width:701px){.lab-card{display:block}.lab-card .card-title,.lab-card .lab-lead,.lab-card .lab-question,.lab-card .lab-ask,.lab-card .lab-answer,.lab-card .lab-privacy{grid-column:auto;grid-row:auto}}
+@media(max-width:620px){.lab-card{min-height:280px}}
