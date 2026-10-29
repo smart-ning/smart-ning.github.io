@@ -2,3 +2,4 @@
 @media(min-width:701px){.lab-card{display:block}.lab-card .card-title,.lab-card .lab-lead,.lab-card .lab-question,.lab-card .lab-ask,.lab-card .lab-answer,.lab-card .lab-privacy{grid-column:auto;grid-row:auto}}
 @media(max-width:620px){.lab-card{min-height:0}}
 .lab-disclaimer,.lab-privacy{margin:3px 0 0;color:#ad9aa8;font-size:9px;text-align:center}.lab-privacy{margin-top:1px}
+.answer-book-card{display:flex;flex-direction:column;justify-content:center;min-height:220px}.answer-book-card .lab-lead{margin:14px 0 12px;font-size:12px;line-height:1.55}.answer-book-card .lab-ask{margin:0 0 10px;padding:10px}.answer-book-card .lab-answer{display:flex;flex-direction:column;justify-content:center;min-height:82px;text-align:center}.answer-book-card .lab-answer strong{font:600 17px/1.5 Georgia,"Songti SC",serif}.answer-book-card .lab-disclaimer{margin-top:4px}
