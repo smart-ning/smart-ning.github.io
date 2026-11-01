@@ -3,7 +3,7 @@
   var card=document.getElementById('rainCard'),audio=document.getElementById('rainAudio'),toggle=document.getElementById('rainToggle'),status=document.getElementById('rainStatus'),volume=document.getElementById('rainVolume'),volumeText=document.getElementById('rainVolumeText'),levelButtons=document.querySelectorAll('[data-rain]'),timerButtons=document.querySelectorAll('[data-minutes]');
   if(!card||!audio||!toggle)return;
   var level='windowRain',stopAt=0,timerTick;
-  var settings={softRain:{src:'audio/soft-rain.wav',label:'轻柔细雨'},windowRain:{src:'audio/window-rain.wav',label:'窗边夜雨'},rainCurtain:{src:'audio/rain-curtain.wav',label:'绵密雨幕'}};
+  var settings={softRain:{src:'audio/soft-rain.wav?v=20261101-2',label:'轻柔细雨'},windowRain:{src:'audio/window-rain.wav?v=20261101-2',label:'窗边夜雨'},rainCurtain:{src:'audio/rain-curtain.wav?v=20261101-2',label:'绵密雨幕'}};
   audio.volume=parseInt(volume.value,10)/100;
   function updateButton(playing){card.classList.toggle('playing',playing);toggle.setAttribute('aria-pressed',playing?'true':'false');toggle.innerHTML=playing?'<b>Ⅱ</b><span>暂停雨声</span>':'<b>▶</b><span>继续下雨</span>';status.textContent=playing?settings[level].label:'雨声已暂停'}
   function play(){var promise=audio.play();if(promise&&promise.catch)promise.catch(function(){status.textContent='请再轻触一次开始播放'});updateButton(true);setMediaState('playing')}
