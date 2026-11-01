@@ -1,15 +1,26 @@
-(function(){'use strict';
-var AudioCtx=window.AudioContext||window.webkitAudioContext,card=document.getElementById('rainCard'),toggle=document.getElementById('rainToggle'),status=document.getElementById('rainStatus'),volume=document.getElementById('rainVolume'),volumeText=document.getElementById('rainVolumeText'),levelButtons=document.querySelectorAll('[data-rain]'),timerButtons=document.querySelectorAll('[data-minutes]');
-if(!card||!toggle)return;
-var ctx,source,master,lowpass,highpass,playing=false,level='windowRain',stopAt=0,timerTick;
-var settings={softRain:{low:2050,high:330,gain:.11,label:'轻柔细雨'},windowRain:{low:1550,high:170,gain:.14,label:'窗边夜雨'},rainCurtain:{low:1150,high:90,gain:.17,label:'绵密雨幕'}};
-function build(){if(ctx)return true;if(!AudioCtx){status.textContent='设备暂不支持';toggle.disabled=true;return false}ctx=new AudioCtx();var seconds=8,frames=ctx.sampleRate*seconds,buffer=ctx.createBuffer(2,frames,ctx.sampleRate);for(var ch=0;ch<2;ch++){var data=buffer.getChannelData(ch),brown=0,pink=0;for(var i=0;i<frames;i++){var white=Math.random()*2-1;brown=(brown+.018*white)/1.018;pink=pink*.94+white*.06;data[i]=white*.34+pink*.82+brown*.42}}source=ctx.createBufferSource();source.buffer=buffer;source.loop=true;highpass=ctx.createBiquadFilter();highpass.type='highpass';lowpass=ctx.createBiquadFilter();lowpass.type='lowpass';master=ctx.createGain();master.gain.value=0;source.connect(highpass);highpass.connect(lowpass);lowpass.connect(master);master.connect(ctx.destination);source.start(0);applyLevel();setVolume();return true}
-function applyLevel(){if(!ctx)return;var s=settings[level];lowpass.frequency.setTargetAtTime(s.low,ctx.currentTime,.8);highpass.frequency.setTargetAtTime(s.high,ctx.currentTime,.8);master.gain.setTargetAtTime((parseInt(volume.value,10)/100)*s.gain,ctx.currentTime,1.2);if(playing)status.textContent=s.label}
-function setVolume(){volumeText.textContent=volume.value+'%';if(ctx)master.gain.setTargetAtTime((parseInt(volume.value,10)/100)*settings[level].gain,ctx.currentTime,.8)}
-function setPlaying(on){if(on){if(!build())return;ctx.resume();playing=true;card.classList.add('playing');toggle.setAttribute('aria-pressed','true');toggle.innerHTML='<b>Ⅱ</b><span>暂停雨声</span>';status.textContent=settings[level].label}else{playing=false;card.classList.remove('playing');toggle.setAttribute('aria-pressed','false');toggle.innerHTML='<b>▶</b><span>继续下雨</span>';status.textContent='雨声已暂停';if(ctx)ctx.suspend()}}
-toggle.onclick=function(){setPlaying(!playing)};volume.oninput=setVolume;
-for(var i=0;i<levelButtons.length;i++)levelButtons[i].onclick=function(){level=this.getAttribute('data-rain');for(var j=0;j<levelButtons.length;j++)levelButtons[j].classList.remove('selected');this.classList.add('selected');applyLevel()};
-function timerLabel(){if(!stopAt)return;var left=Math.max(0,Math.ceil((stopAt-Date.now())/60000));if(!left){stopAt=0;setPlaying(false);status.textContent='定时结束，晚安';for(var k=0;k<timerButtons.length;k++)timerButtons[k].classList.remove('selected');clearInterval(timerTick)}else status.textContent=settings[level].label+' · '+left+'分钟'}
-for(var n=0;n<timerButtons.length;n++)timerButtons[n].onclick=function(){var minutes=parseInt(this.getAttribute('data-minutes'),10);stopAt=minutes?Date.now()+minutes*60000:0;for(var j=0;j<timerButtons.length;j++)timerButtons[j].classList.remove('selected');if(minutes)this.classList.add('selected');clearInterval(timerTick);if(minutes){if(!playing)setPlaying(true);timerLabel();timerTick=setInterval(timerLabel,30000)}else{status.textContent=playing?settings[level].label:'等待入睡'}};
-document.addEventListener('visibilitychange',function(){if(!document.hidden&&playing&&ctx&&ctx.state==='suspended')status.textContent='轻触继续雨声'});
+(function(){
+  'use strict';
+  var card=document.getElementById('rainCard'),audio=document.getElementById('rainAudio'),toggle=document.getElementById('rainToggle'),status=document.getElementById('rainStatus'),volume=document.getElementById('rainVolume'),volumeText=document.getElementById('rainVolumeText'),levelButtons=document.querySelectorAll('[data-rain]'),timerButtons=document.querySelectorAll('[data-minutes]');
+  if(!card||!audio||!toggle)return;
+  var level='windowRain',stopAt=0,timerTick;
+  var settings={softRain:{src:'audio/soft-rain.wav',label:'轻柔细雨'},windowRain:{src:'audio/window-rain.wav',label:'窗边夜雨'},rainCurtain:{src:'audio/rain-curtain.wav',label:'绵密雨幕'}};
+  audio.volume=parseInt(volume.value,10)/100;
+  function updateButton(playing){card.classList.toggle('playing',playing);toggle.setAttribute('aria-pressed',playing?'true':'false');toggle.innerHTML=playing?'<b>Ⅱ</b><span>暂停雨声</span>':'<b>▶</b><span>继续下雨</span>';status.textContent=playing?settings[level].label:'雨声已暂停'}
+  function play(){var promise=audio.play();if(promise&&promise.catch)promise.catch(function(){status.textContent='请再轻触一次开始播放'});updateButton(true);setMediaState('playing')}
+  function pause(){audio.pause();updateButton(false);setMediaState('paused')}
+  toggle.onclick=function(){if(audio.paused)play();else pause()};
+  volume.oninput=function(){audio.volume=parseInt(volume.value,10)/100;volumeText.textContent=volume.value+'%'};
+  for(var i=0;i<levelButtons.length;i++)levelButtons[i].onclick=function(){
+    var wasPlaying=!audio.paused;level=this.getAttribute('data-rain');
+    for(var j=0;j<levelButtons.length;j++)levelButtons[j].classList.remove('selected');
+    this.classList.add('selected');audio.src=settings[level].src;audio.load();
+    status.textContent=settings[level].label;if(wasPlaying)play();setMediaMetadata()
+  };
+  function timerLabel(){if(!stopAt)return;var left=Math.max(0,Math.ceil((stopAt-Date.now())/60000));if(!left){stopAt=0;pause();status.textContent='定时结束，晚安';for(var k=0;k<timerButtons.length;k++)timerButtons[k].classList.remove('selected');clearInterval(timerTick)}else status.textContent=settings[level].label+' · '+left+'分钟'}
+  for(var n=0;n<timerButtons.length;n++)timerButtons[n].onclick=function(){var minutes=parseInt(this.getAttribute('data-minutes'),10);stopAt=minutes?Date.now()+minutes*60000:0;for(var j=0;j<timerButtons.length;j++)timerButtons[j].classList.remove('selected');if(minutes)this.classList.add('selected');clearInterval(timerTick);if(minutes){if(audio.paused)play();timerLabel();timerTick=setInterval(timerLabel,30000)}else status.textContent=audio.paused?'等待入睡':settings[level].label};
+  audio.addEventListener('play',function(){updateButton(true)});audio.addEventListener('pause',function(){if(!audio.ended)updateButton(false)});audio.addEventListener('error',function(){status.textContent='雨声加载失败，请检查网络后重试'});
+  function setMediaMetadata(){if(!('mediaSession' in navigator)||!window.MediaMetadata)return;navigator.mediaSession.metadata=new MediaMetadata({title:settings[level].label,artist:'Healing Island',album:'晚安雨声',artwork:[{src:'apple-touch-icon.png',sizes:'180x180',type:'image/png'}]})}
+  function setMediaState(state){if('mediaSession' in navigator)try{navigator.mediaSession.playbackState=state}catch(e){}}
+  if('mediaSession' in navigator){try{navigator.mediaSession.setActionHandler('play',play);navigator.mediaSession.setActionHandler('pause',pause)}catch(e){}}
+  setMediaMetadata();
 }());
