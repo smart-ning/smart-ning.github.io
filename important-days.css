@@ -27,15 +27,16 @@ header h1{color:#66696e;text-shadow:none}.eyebrow{color:#9a9da1}
 .grid>article.card:not(.rain-card){background:rgba(255,255,255,.64)!important;border:1px solid rgba(255,255,255,.92)!important;box-shadow:0 10px 26px rgba(75,84,90,.07),inset 0 1px rgba(255,255,255,.92)!important;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
 
 /* The whole sleep-noise card is the rain scene; no nested background panel. */
-.grid>article.rain-card{background:rgba(255,255,255,.64)!important;border:1px solid rgba(255,255,255,.92)!important;box-shadow:0 10px 26px rgba(75,84,90,.07),inset 0 1px rgba(255,255,255,.92)!important;color:#6f7478;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.grid>article.rain-card{background:linear-gradient(155deg,rgba(255,255,250,.86),rgba(255,250,231,.8) 58%,rgba(250,243,218,.74))!important;border:1px solid rgba(255,255,255,.94)!important;box-shadow:0 10px 26px rgba(133,115,73,.07),inset 0 1px rgba(255,255,255,.94)!important;color:#766f61;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
 .rain-card:before{background:linear-gradient(118deg,rgba(255,255,255,.42),transparent 34%,rgba(255,255,255,.14) 62%,transparent)!important}
 .rain-card .rain-scene{inset:0!important;width:100%!important;opacity:1!important;background:transparent!important}
 .rain-card .rain-scene:after{background:linear-gradient(112deg,rgba(255,255,255,.25),transparent 38%,rgba(255,255,255,.11) 68%,transparent)!important}
-.rain-card .rain-cloud{color:rgba(192,215,224,.52);text-shadow:none}
-.rain-card .rain-scene i{width:1.5px;background:linear-gradient(transparent,rgba(157,194,208,.58));opacity:.62;animation-play-state:running}
-.rain-card .rain-puddle{border-color:rgba(157,194,208,.24);box-shadow:0 0 0 7px rgba(255,255,255,.12)}
+.rain-card .rain-cloud{color:#f2d478;text-shadow:0 0 12px rgba(255,225,132,.5),0 7px 20px rgba(160,139,87,.1);transform:rotate(-8deg)}
+.rain-card .rain-cloud:after{content:"✦";position:absolute;right:-3px;top:3px;color:#e9c85f;font:13px/1 sans-serif;text-shadow:0 0 8px rgba(255,226,134,.65)}
+.rain-card .rain-scene i{width:1.5px;background:linear-gradient(transparent,rgba(213,188,128,.52));opacity:.58;animation-play-state:running}
+.rain-card .rain-puddle{border-color:rgba(206,181,121,.22);box-shadow:0 0 0 7px rgba(255,255,255,.14)}
 .rain-card .rain-content{height:100%;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
-.rain-card .card-title span{color:#666d71}.rain-card .card-title small,.rain-card .rain-lead,.rain-card .rain-volume,.rain-card .rain-note{color:#858d91!important}
-.rain-card .rain-toggle,.rain-card .rain-levels button{border-color:rgba(255,255,255,.9);background:rgba(255,255,255,.5);color:#6d777c;box-shadow:none}
-.rain-card .rain-levels button.selected,.rain-card.playing .rain-toggle{border-color:rgba(255,255,255,.98);background:rgba(255,255,255,.78);color:#59666c}
-.rain-card .rain-volume input{accent-color:#9fc3d1}
+.rain-card .card-title span{color:#716958}.rain-card .card-title small,.rain-card .rain-lead,.rain-card .rain-volume,.rain-card .rain-note{color:#918773!important}
+.rain-card .rain-toggle,.rain-card .rain-levels button{border-color:rgba(255,255,255,.92);background:rgba(255,255,255,.52);color:#7b725f;box-shadow:none}
+.rain-card .rain-levels button.selected,.rain-card.playing .rain-toggle{border-color:rgba(255,255,255,.99);background:rgba(255,255,255,.8);color:#665d4c}
+.rain-card .rain-volume input{accent-color:#d1b96f}
